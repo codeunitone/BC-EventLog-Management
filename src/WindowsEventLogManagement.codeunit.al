@@ -1,4 +1,4 @@
-codeunit 50100 "Event Log Management"
+codeunit 50100 "Windows-EventLog Management"
 {
 
     local procedure MyProcedure()
@@ -12,9 +12,11 @@ codeunit 50100 "Event Log Management"
     var
         EventLog: DotNet SystemDiagnosticEventLog;
         EventLogEntryType: DotNet SystemDiagnosticsEventLogEntryType;
+        EventLogName: Label 'Application';
+        EventLogSource: Label 'MicrosoftDynamicsNav';
     begin
-        EventLog := EventLog.EventLog('Application');
-        EventLog.Source := 'MicrosoftDynamicsNav';
+        EventLog := EventLog.EventLog(EventLogName);
+        EventLog.Source := EventLogSource;
 
         case EventType of
             EventType::Information:
