@@ -7,5 +7,9 @@
     "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectType>.al",
     "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectType>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectType>.al",
-    "CRS.OnSaveAlFileAction": "Rename"
+    "CRS.OnSaveAlFileAction": "Rename",
+    "al.assemblyProbingPaths": [
+        "./.netpackages",
+        "C:/Windows/Microsoft.NET/Framework64/v4.0.30319"
+    ]
 }
